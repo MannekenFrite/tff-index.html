@@ -8,11 +8,24 @@
         .green-bold {
             color: green;
             font-weight: bold;
-            font-size: 10em; /* Makes the text x times larger than the default size */
+            font-size: 8vw; /* Makes the text size proportional to the viewport width */
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%; /* Ensures the image width does not exceed the screen size */
+            height: auto;   /* Maintains the aspect ratio */
+            display: block; /* Centers the image horizontally */
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <p class="green-bold">Ça marche, une fois !</p>
+    
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://i.etsystatic.com/7019867/r/il/9833fa/2704635330/il_fullxfull.2704635330_eitv.jpg" alt="Image">
+    </div>
 </body>
 </html>

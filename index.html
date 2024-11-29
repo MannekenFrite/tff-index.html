@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon premier site web</title>
+    <title>Responsive ASCII Art</title>
     <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000; /* Optional for better contrast */
+        }
         .ascii-art {
-            font-family: "Courier New", Courier, monospace; /* Monospaced font for ASCII art */
+            font-family: "Courier New", Courier, monospace; /* Monospaced font for proper alignment */
+            white-space: pre; /* Preserves spacing */
             text-align: center; /* Centers the ASCII art */
-            color: green; /* Adds color to the text */
-            font-size: 1.5em; /* Makes the ASCII art larger */
-            margin: 20px 0;
+            color: limegreen; /* Makes it green */
+            margin: 20px;
+            font-size: calc(1vw + 0.5vh); /* Dynamically adjusts based on screen size */
+            line-height: 1; /* Keeps lines tight to preserve proportions */
         }
     </style>
 </head>
